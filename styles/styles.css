@@ -1,1 +1,121 @@
+:root {
+    --darkblue: #384b61;
+    --blue: #7faec5;
+    --green: #4ecd5d;
+    --normalfont: 'Open Sans', sans-serif;
+    --titlefont: 'Raleway', sans-serif;
+  }
 
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: var(--darkblue);
+    font-family: var(--normalfont);
+    font-size: 1rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 4em;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-family: var(--titlefont);
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    color: var(--blue);
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    color: var(--green);
+  }
+
+  h4 {
+    border-bottom: 2px solid var(--green);
+    margin-bottom: 1rem;
+    width: 25em;
+    margin-top: 3em;
+    height: 2em;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    height: 80px;
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav a {
+    margin-right: 1em;
+  }
+
+  .logo {
+    width: 7em;
+    padding: 0.5em 0 0.5em 0;
+  }
+
+  .top-section {
+    margin-bottom: 3em;
+  }
+
+  .information-section {
+    width: 50rem;
+  }
+
+  .app {
+    margin-top: 1em;
+  }
+
+  .download {
+    color: var(--green);
+  }
+
+  .review-list {
+    display: flex;
+    list-style: none;
+    width: 50rem;
+    overflow-x: scroll;
+  }
+
+  .review {
+    padding: 1em;
+    width: 15em;
+    height: 10em;
+    margin-right: 1em;
+  }
+
+  .stars {
+    color: #FAB709;
+    font-size: 1.4em;
+  }
