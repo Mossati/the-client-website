@@ -2,6 +2,7 @@
     --darkblue: #384b61;
     --blue: #7faec5;
     --green: #4ecd5d;
+    --white: #ffffff;
     --normalfont: 'Open Sans', sans-serif;
     --titlefont: 'Raleway', sans-serif;
   }
@@ -78,11 +79,25 @@
 
   nav a {
     margin-right: 1em;
+    text-decoration: none;
+    color: var(--darkblue);
+  }
+
+  nav a:hover {
+    color: var(--green);
   }
 
   .logo {
     width: 7em;
     padding: 0.5em 0 0.5em 0;
+  }
+
+  .btn {
+    background-color: var(--green);
+    padding: 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
   }
 
   .top-section {
