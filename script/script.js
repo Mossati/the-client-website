@@ -15,3 +15,14 @@ function option3(){
         behavior: 'smooth'
       });
 }
+
+function classToggle(x) {
+  const navs = document.querySelectorAll('.nav-items')
+  
+  navs.forEach(nav => nav.classList.toggle('nav-toggle-show'));
+
+  x.classList.toggle("change");
+}
+
+document.querySelector('.nav-toggle')
+  .addEventListener('click', classToggle);
