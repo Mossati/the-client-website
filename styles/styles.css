@@ -20,6 +20,26 @@
     height: 100%;
     width: 100%;
     line-height: 1.4em;
+    background-image: url('/assets/background-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .header-title {
+    background-image: url('/assets/header-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .moving-cloud {
+    width: 100%;
+    height: 3em;
+    background-image: url('/assets/cloud.png');
+    background-repeat: repeat-x;
+    animation: scrollCloud 60s linear infinite;
   }
 
   article{
@@ -28,6 +48,14 @@
 
   .article-color {
     background-color: var(--green);
+  }
+
+  .header-height {
+    height: 20em;
+  }
+
+  .header-height .col:nth-child(1) {
+    align-self: center;
   }
 
   h1 {
@@ -47,6 +75,21 @@
 
   .btn-section {
     margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-section .btn:nth-child(1) {
+    margin-right: 0.5em;
+  }
+
+  .section-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col {
+    flex: 1;
   }
 
   .intro-title {
@@ -71,24 +114,22 @@
   }
 
   .btn, .nav-btn {
-    background-color: var(--green);
     border-radius: 0.2em;
     border: none;
-    color: var(--white);
+    color: var(--darkblue);
     padding: 0.7rem 1rem;
     text-align: center;
+    font-size: 1em;
     font-weight: 600;
     width: 10em;
     cursor: pointer;
-    border: 2px solid var(--green);
-  }
-
-  .btn {
-    margin: 0.5em 0;
+    background-color: transparent;
   }
 
   .btn-colored {
+    color: var(--white);
     background-color: var(--green);
+    border: 2px solid var(--green);
   }
 
   .btn-colored:hover {
@@ -98,7 +139,6 @@
   }
 
   .btn-border {
-    background-color: var(--white);
     color: var(--darkblue);
     border: 2px solid var(--green);
   }
@@ -109,12 +149,27 @@
     border: 2px solid var(--darkblue);
   }
 
+  .btn-read {
+    margin: 0.5em 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .btn-read:hover {
+    color: var(--blue);
+  }
+
+  #spatwater .btn {
+    display: block;
+  }
+
   nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em;
+    background-color: var(--white);
   }
 
   nav img {
@@ -130,6 +185,7 @@
   .nav-link {
     padding: 0.5em;
     text-align: center;
+    font-weight: 600;
   }
 
   .nav-toggle {
@@ -137,12 +193,12 @@
   }
 
   a {
-    color: var(--darkblue);
+    color: var(--blue);
     text-decoration: none;
   }
 
   a:hover {
-    color: var(--blue);
+    color: var(--green);
   }
 
   .bar1, .bar2, .bar3 {
@@ -204,6 +260,10 @@
     flex-direction: column;
   }
 
+  form .btn {
+    margin: 0;
+  }
+
   input, textarea {
     padding: 0.5em;
     margin: 0 0 1em 0;
@@ -218,8 +278,10 @@
   }
 
   #scroll-top {
-    display: flex;
+    display: none;
     position: fixed;
+    bottom: 1em;
+    right: 1em;
     z-index: 100;
     font-size: 1em;
     border: none;
@@ -227,15 +289,19 @@
     background-color: var(--green);
     color: var(--white);
     cursor: pointer;
-    padding: 0.5em;
+    padding: 1em;
     opacity: 0.9;
     border-radius: 0.2em;
     transition: .4s;
   }
   
   #scroll-top:hover {
-    background-color: #555;
+    background-color: var(--darkblue);
   }
+
+  #scroll-top.show {
+    display: block;
+}
 
   @media only screen and (max-width: 768px) {
     .sub-header {
@@ -272,5 +338,22 @@
     .review-section {
       margin-right: 0;
     }
+    .section-row {
+      flex-direction: column;
+    }
+    .col img {
+      display: none;
+    }
+    .header-height {
+      height: auto;
+    }
+    .header-height .col:nth-child(1) {
+      align-self: flex-start;
+    }
+  }
+
+  @keyframes scrollCloud {
+    from {background-position: 0 0;}
+    to {background-position: -100% 0;}
   }
 

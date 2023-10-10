@@ -17,9 +17,8 @@ function option3(){
 }
 
 function classToggle(x) {
-  const navs = document.querySelectorAll('.nav-items')
-  
-  navs.forEach(nav => nav.classList.toggle('nav-toggle-show'));
+  const navItems = x.parentElement.parentElement.querySelector('.nav-items');
+  navItems.classList.toggle('nav-toggle-show');
 
   x.classList.toggle("change");
 }
@@ -29,55 +28,67 @@ document.querySelector('.nav-toggle')
 
 
 function readArticle1() {
-  var dots = document.getElementById("dots");
+  var dots = document.getElementById("dots1");
   var moreText = document.getElementById("section-more1");
-  var btnText = document.getElementById("btn-read");
+  var btnText = document.getElementById("btn-read1");
   
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Lees verder";
+    btnText.innerHTML = '<i class="fa-brands fa-readme"></i> Lees verder';
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Lees minder";
+    btnText.innerHTML = '<i class="fa-brands fa-readme"></i> Lees minder';
     moreText.style.display = "inline";
   }
 }
 
 function readArticle2() {
-  var dots = document.getElementById("dots");
+  var dots = document.getElementById("dots2");
   var moreText = document.getElementById("section-more2");
-  var btnText = document.getElementById("btn-read");
+  var btnText = document.getElementById("btn-read2");
   
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Lees verder";
+    btnText.innerHTML = '<i class="fa-brands fa-readme"></i> Lees verder';
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Lees minder";
+    btnText.innerHTML = '<i class="fa-brands fa-readme"></i> Lees minder';
     moreText.style.display = "inline";
   }
 }
 
 function readArticle3() {
-  var dots = document.getElementById("dots");
+  var dots = document.getElementById("dots3");
   var moreText = document.getElementById("section-more3");
-  var btnText = document.getElementById("btn-read");
+  var btnText = document.getElementById("btn-read3");
   
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Lees verder";
+    btnText.innerHTML = '<i class="fa-brands fa-readme"></i> Lees verder';
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Lees minder";
+    btnText.innerHTML = '<i class="fa-brands fa-readme"></i> Lees minder';
     moreText.style.display = "inline";
   }
 }
 
-function scrollTop() {
-  const scrollTop = document.getElementById('scroll-top');
-    if(this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+var scrollToTopBtn = document.getElementById("scroll-top");
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
-window.addEventListener('scroll', scrollUp)
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 200) {
+        scrollToTopBtn.classList.add("show");
+    } else {
+        scrollToTopBtn.classList.remove("show");
+    }
+});
