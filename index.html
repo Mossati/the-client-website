@@ -40,8 +40,8 @@
                         <a href="#spatwater" class="btn btn-border"><i class="fa-solid fa-water"></i> SPATwater</a>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="/assets/walking.png" width="100%" height="100%" alt="walking person">
+                <div class="col img-section">
+                    <img src="/assets/walking.png" alt="walking person">
                 </div>
             </section>
         </article>
@@ -80,29 +80,44 @@
                 De b-RAIN app communiceert met onze slimme kraan en geeft je inzicht in hoeveel water er al bespaard is,
                 wat de neerslagverwachting is en wanneer je je tuin het beste water kan geven.</span></p>
                 <button onclick="readArticle2()" class="btn btn-read" id="btn-read2"><i class="fa-brands fa-readme"></i> lees verder</button>
+
+            <h3 class="problem-subtitle">Het  probleem en de oplossing</h3>
+            <section class="slider-section">
+                <div class="icon-no"><i class="fa-solid fa-ban"></i></div>
+                <div class="icon-yes"><i class="fa-solid fa-check"></i></div>
+                <img id="slider-img">
+                <input class="slider" id="problem-slider" type="range" min="0" max="4" value="0" step="1" oninput="showVal(this.value)" onchange="showVal(this.value)" />
+            </section>
         </article>
 
         <article id="waarom">
             <h2 class="section-title">Waarom b-RAIN?</h2>
-            <p>Onze wereld wordt geconfronteerd met steeds extremere weersomstandigheden. We krijgen te maken met
-                langdurige droogte en intensere neerslag. Dit zorgt ervoor dat we, om de stad leefbaar te houden, beter
-                voorbereid moeten zijn op dergelijke extremen. Iedereen kan helpen in deze opgave: bewoners, bedrijven
-                en gemeenten. Door water op te slaan in periodes dat het regent en te
-                gebruiken als het nodig is maken we onze omgeving klimaatadaptiever. 
-                <span id="dots3">...</span><span id="section-more3">
-                Dit kunnen we doen aan de hand van regenwateropslag systemen zoals regentonnen.
-                Traditionele regentonnen zijn een geweldige manier om regenwater op te vangen en te hergebruiken, maar
-                ze hebben beperkingen. Vaak moeten ze handmatig worden beheerd, en dat kan een hele klus zijn. Bovendien
-                kunnen ze overlopen bij zware regenval, wat leidt tot verlies van water en mogelijke schade. Aan de
-                andere kant kunnen ze leeg raken tijdens droge periodes, waardoor we gedwongen worden om ons toevlucht
-                te nemen tot kostbaar kraanwater.
-                Wat b-RAIN onderscheidt, is de verhoogde effectiviteit van de regenwateropslag. Ons systeem maakt
-                gebruik van real-time weersinformatie om te bepalen wanneer en hoeveel water er aan je regenton moet
-                worden toegevoegd. Dit betekent dat je altijd de optimale hoeveelheid water hebt, ongeacht de
-                weersomstandigheden. Het voorkomt niet alleen verspilling, maar maximaliseert ook de beschikbaarheid van
-                water wanneer je dit het meeste nodig hebt. Dit resulteert in aanzienlijke besparingen, zowel op je
-                waterrekening als voor het milieu.</span></p>
-                <button onclick="readArticle3()" class="btn btn-read" id="btn-read3"><i class="fa-brands fa-readme"></i> lees verder</button>
+            <section class="section-row">
+                <div class="col">
+                    <p>Onze wereld wordt geconfronteerd met steeds extremere weersomstandigheden. We krijgen te maken met
+                        langdurige droogte en intensere neerslag. Dit zorgt ervoor dat we, om de stad leefbaar te houden, beter
+                        voorbereid moeten zijn op dergelijke extremen. Iedereen kan helpen in deze opgave: bewoners, bedrijven
+                        en gemeenten. Door water op te slaan in periodes dat het regent en te
+                        gebruiken als het nodig is maken we onze omgeving klimaatadaptiever. 
+                        <span id="dots3">...</span><span id="section-more3">
+                        Dit kunnen we doen aan de hand van regenwateropslag systemen zoals regentonnen.
+                        Traditionele regentonnen zijn een geweldige manier om regenwater op te vangen en te hergebruiken, maar
+                        ze hebben beperkingen. Vaak moeten ze handmatig worden beheerd, en dat kan een hele klus zijn. Bovendien
+                        kunnen ze overlopen bij zware regenval, wat leidt tot verlies van water en mogelijke schade. Aan de
+                        andere kant kunnen ze leeg raken tijdens droge periodes, waardoor we gedwongen worden om ons toevlucht
+                        te nemen tot kostbaar kraanwater.
+                        Wat b-RAIN onderscheidt, is de verhoogde effectiviteit van de regenwateropslag. Ons systeem maakt
+                        gebruik van real-time weersinformatie om te bepalen wanneer en hoeveel water er aan je regenton moet
+                        worden toegevoegd. Dit betekent dat je altijd de optimale hoeveelheid water hebt, ongeacht de
+                        weersomstandigheden. Het voorkomt niet alleen verspilling, maar maximaliseert ook de beschikbaarheid van
+                        water wanneer je dit het meeste nodig hebt. Dit resulteert in aanzienlijke besparingen, zowel op je
+                        waterrekening als voor het milieu.</span></p>
+                        <button onclick="readArticle3()" class="btn btn-read" id="btn-read3"><i class="fa-brands fa-readme"></i> lees verder</button>
+                </div>
+                <div class="col">
+                    <img src="/assets/thinking.svg" alt="thinking">
+                </div>
+            </section>
         </article>
 
         <article>
@@ -112,6 +127,9 @@
                 manier krijgt u inzicht in de hoeveelheid water die u beschikbaar heeft, hoeveel u bespaard heeft maar
                 ook wat de verwachtte wateropslag is voor de komende zeven dagen.
             </p>
+            <section class="img-section">
+                <img class="img-app" src="/assets/b-RAIN_app.png" alt="brain-app">
+            </section>
         </article>
 
         <article class="article-color">
@@ -165,7 +183,7 @@
                     </form>
                 </div>
                 <div class="col">
-                    <img src="/assets/tree.png" width="100%" height="100%" alt="tree">
+                    <img src="/assets/mail.svg" alt="mail">
                 </div>
             </section>
         </article>
@@ -177,6 +195,10 @@
             <a href="https://www.spatwater.nl" class="btn btn-colored"><i class="fa-solid fa-water"></i> SPATwater</a>
         </article>
     </main>
+    <section class="moving-cloud rotate-cloud"></section>
+    <footer>
+        <p>© 2023 b-RAIN. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

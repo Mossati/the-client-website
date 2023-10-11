@@ -92,3 +92,11 @@ window.addEventListener("scroll", function() {
         scrollToTopBtn.classList.remove("show");
     }
 });
+
+
+var val = document.getElementById("problem-slider").value;
+document.getElementById("slider-img").src = "/assets/" +  val + ".svg";
+
+function showVal(newVal){
+  document.getElementById("slider-img").src = "/assets/" + newVal+ ".svg";
+}
