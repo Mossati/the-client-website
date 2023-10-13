@@ -95,8 +95,8 @@ window.addEventListener("scroll", function() {
 
 
 var val = document.getElementById("problem-slider").value;
-document.getElementById("slider-img").src = "../assets/slider-img" +  val + ".svg";
+document.getElementById("slider-img").src = "./assets/slider-img" +  val + ".svg";
 
 function showVal(newVal){
-  document.getElementById("slider-img").src = "../assets/slider-img" + newVal+ ".svg";
+  document.getElementById("slider-img").src = "./assets/slider-img" + newVal+ ".svg";
 }
