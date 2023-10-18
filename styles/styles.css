@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
 
 :root {
-    --darkblue: #384b61;
-    --blue: #7faec5;
-    --green: #4ecd5d;
-    --darkgreen: #319b3d;
-    --yellow: #e9c836;
-    --red: #cd4e4e;
+    --darkblue: #344a64;
+    --blue: #5d93ae;
+    --green: #48c056;
+    --darkgreen: #287530;
+    --yellow: #e1bf24;
+    --red: #b33838;
     --white: #ffffff;
     --grey: #919ea1;
+    --black: #1a1a1a;
     --normalfont: 'Open Sans', sans-serif;
     --titlefont: 'Raleway', sans-serif;
   }
@@ -29,7 +30,8 @@
     height: 100%;
     width: 100%;
     line-height: 1.4em;
-    background-image: url('../assets/background-img.png');
+    /* background-image: url('../assets/background-img.png'); */
+    background-color: #e3edf1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -112,7 +114,13 @@
   }
 
   .col img {
+    margin-top: 1em;
     width: 25em;
+  }
+
+  .img-flex {
+    display: flex;
+    justify-content: center;
   }
 
   .intro-title {
@@ -126,7 +134,8 @@
   }
 
   .colored-title {
-    border-bottom: 2px solid var(--darkblue);
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
   }
 
   .problem-subtitle {
@@ -292,7 +301,7 @@
 
   .star-total {
     font-size: 2em;
-    color: var(--darkblue);
+    color: var(--white);
     font-weight: 600;
     margin-right: 0.2em;
   }
@@ -306,6 +315,7 @@
   .star-box p {
     width: 5em;
     margin-right: 1em;
+    color: var(--white);
   }
 
   .review-bar {
@@ -500,6 +510,22 @@
     font-size: 1em;
   }
 
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--white); 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--darkblue); 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--blue); 
+  }
+
   @media only screen and (max-width: 768px) {
     article{
       padding: 1em;
@@ -576,6 +602,18 @@
     }
     footer {
       padding: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    nav {
+      padding: 0.5em 10em;
+    }
+    .img-section {
+      display: none;
+    }
+    .section-row {
+      flex-direction: column;
     }
   }
 

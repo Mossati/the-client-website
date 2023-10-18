@@ -85,7 +85,8 @@
             <section class="slider-section">
                 <div class="icon-no"><i class="fa-solid fa-ban"></i></div>
                 <div class="icon-yes"><i class="fa-solid fa-check"></i></div>
-                <img id="slider-img">
+                <img id="slider-img" alt="slider-img">
+                <label for="problem-slider">Probleem en oplossing</label>
                 <input class="slider" id="problem-slider" type="range" min="0" max="4" value="0" step="1" oninput="showVal(this.value)" onchange="showVal(this.value)" />
             </section>
         </article>
@@ -114,7 +115,7 @@
                         waterrekening als voor het milieu.</span></p>
                         <button onclick="readArticle3()" class="btn btn-read" id="btn-read3"><i class="fa-brands fa-readme"></i> lees verder</button>
                 </div>
-                <div class="col">
+                <div class="col img-flex">
                     <img src="./assets/thought.svg" alt="thinking">
                 </div>
             </section>
@@ -130,7 +131,7 @@
                         ook wat de verwachtte wateropslag is voor de komende zeven dagen.
                     </p>
                 </div>
-                <div class="col">
+                <div class="col img-flex">
                     <img src="./assets/app.png" alt="brain-app">
                 </div>
             </section>
@@ -214,10 +215,10 @@
                         <input type="email" placeholder="email...">
                         <label for="message">Bericht</label>
                         <textarea placeholder="bericht..."></textarea>
-                        <input type="submit" class="btn btn-colored">
+                        <input type="submit" class="btn btn-colored" value="Verzenden">
                     </form>
                 </div>
-                <div class="col">
+                <div class="col img-flex">
                     <img src="./assets/mail.svg" alt="mail">
                 </div>
             </section>
