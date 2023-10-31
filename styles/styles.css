@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
 
 :root {
-    --darkblue: #344a64;
-    --blue: #5d93ae;
-    --green: #48c056;
+    --darkblue: #384b61;
+    --blue: #7faec5;
+    --green: #4ecd5d;
     --darkgreen: #287530;
     --yellow: #e1bf24;
     --red: #b33838;
@@ -30,19 +30,12 @@
     height: 100%;
     width: 100%;
     line-height: 1.4em;
-    /* background-image: url('../assets/background-img.png'); */
+    background-image: url('../assets/background-img.png');
     background-color: #e3edf1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-  }
-
-  .header-title {
-    background-image: url('../assets/header-img.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .moving-cloud {
@@ -61,8 +54,23 @@
     padding: 1em 15em;
   }
 
+  .fade-in {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s, transform 1s;
+  }
+
   .article-color {
     background-color: var(--green);
+  }
+  
+  .header-bg {
+    background-image: url('../assets/header-img.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1em;
   }
 
   .header-height {
@@ -86,7 +94,7 @@
 
   .sub-header {
     font-size: 1.6em;
-    color: var(--blue);
+    color: var(--white);
     margin: 0.5em 0;
   }
 
@@ -172,21 +180,33 @@
     margin-top: 1em;
   }
 
-  .btn-colored {
+  .btn-green {
     color: var(--white);
     background-color: var(--green);
     border: 2px solid var(--green);
   }
 
-  .btn-colored:hover {
+  .btn-green:hover {
     background-color: var(--darkblue);
     color: var(--white);
     border: 2px solid var(--darkblue);
   }
 
-  .btn-border {
+  .btn-white {
     color: var(--darkblue);
-    border: 2px solid var(--green);
+    background-color: var(--white);
+    border: 2px solid var(--white);
+  }
+
+  .btn-white:hover {
+    color: var(--white);
+    background-color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+  }
+
+  .btn-border {
+    color: var(--white);
+    border: 2px solid var(--white);
   }
 
   .btn-border:hover {
@@ -355,6 +375,37 @@
     height: 10em;
   }
 
+  .carousel {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    transition: transform 0.5s;
+  }
+
+  .image-item {
+      transition: transform 0.5s, transform-origin 0.5s;
+      margin: 0.5em 0.5em;
+  }
+
+  .image-item img {
+      width: 100%;
+      height: auto;
+      border: 0.15em solid var(--green);
+      border-radius: 0.5em;
+      transition: transform 0.5s;
+  }
+
+  .doel-list {
+    color: var(--blue);
+    list-style: none;
+  }
+
+  .doel-list li {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0 0 0.5em 0;
+  }
+
   #scroll-top {
     display: none;
     position: fixed;
@@ -501,6 +552,7 @@
   }
 
   footer {
+    height: 5em;
     background-color: var(--white);
     padding: 1em 15em;
   }
@@ -532,31 +584,6 @@
     }
     .sub-header {
       font-size: 1.3em;
-    }
-    nav {
-      flex-direction: column;
-      position: relative;
-    }
-    .nav-items {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-    }
-    .nav-toggle {
-      display: block;
-      cursor: pointer;
-    }
-    .nav-toggle-show {
-      display: flex;
-    }
-    nav a {
-      align-self: self-start;
-    }
-    .nav-heading {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
     .review-wrapper {
       flex-direction: column;
@@ -605,15 +632,34 @@
     }
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1180px) {
     nav {
-      padding: 0.5em 10em;
-    }
-    .img-section {
-      display: none;
-    }
-    .section-row {
       flex-direction: column;
+      position: relative;
+    }
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    .nav-toggle {
+      display: block;
+      cursor: pointer;
+    }
+    .nav-toggle-show {
+      display: flex;
+    }
+    nav a {
+      align-self: self-start;
+    }
+    .nav-heading {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    article {
+      padding: 1em 5em;
     }
   }
 

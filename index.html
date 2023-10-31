@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-bg">
         <nav>
             <section class="nav-heading">
                 <a href="#" class="nav-brand"><img src="./assets/logo_spatwater.png" width="100%" height="100%" alt="logo"></a>
@@ -25,7 +25,7 @@
             <ul class="nav-items" id="nav-items">
                 <li class="nav-link"><a href="#probleem">Waarom het probleem?</a></li>
                 <li class="nav-link"><a href="#waarom">Waarom b-rain?</a></li>
-                <li class="nav-link"><a href="#contact" class="nav-btn btn-colored"><i class="fa-solid fa-people-pulling"></i> Hoe doe je mee?</a></li>
+                <li class="nav-link"><a href="#contact" class="nav-btn btn-green"><i class="fa-solid fa-people-pulling"></i> Hoe doe je mee?</a></li>
             </ul>
         </nav>
 
@@ -36,7 +36,7 @@
                     <h1>B-RAIN</h1>
                     <p class="sub-header">Wees slim met ons water, be b-RAIN!</p>
                     <div class="btn-section">
-                        <a href="#intro" class="btn btn-colored"><i class="fa-solid fa-arrow-down"></i> Scroll</a>
+                        <a href="#intro" class="btn btn-white"><i class="fa-solid fa-arrow-down"></i> Scroll</a>
                         <a href="#spatwater" class="btn btn-border"><i class="fa-solid fa-water"></i> SPATwater</a>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                 <button onclick="readArticle1()" class="btn btn-read" id="btn-read1"><i class="fa-brands fa-readme"></i> lees verder</button>
         </article>
 
-        <article id="probleem">
+        <article id="probleem" class="fade-in">
             <h2 class="section-title">Wat is b-RAIN?</h2>
             <p>b-RAIN is de manier om zo optimaal mogelijk om te gaan met de neerslag rondom je huis. Met slimme
                 technologie, gebaseerd op weersvoorspellingen, regelt ons product automatisch de hoeveelheid water in de
@@ -91,7 +91,7 @@
             </section>
         </article>
 
-        <article id="waarom">
+        <article id="waarom" class="fade-in">
             <h2 class="section-title">Waarom b-RAIN?</h2>
             <section class="section-row">
                 <div class="col">
@@ -121,7 +121,7 @@
             </section>
         </article>
 
-        <article>
+        <article class="fade-in">
             <h2 class="section-title">De Brain-app</h2>
             <section class="section-row">
                 <div class="col">
@@ -137,7 +137,7 @@
             </section>
         </article>
 
-        <article class="article-color">
+        <article class="article-color fade-in">
             <h2 class="section-title colored-title">Ervaringen</h2>
             <section class="section-row">
                 <div class="col col-sm">
@@ -202,10 +202,10 @@
             </section>
         </article>
 
-        <article id="contact">
+        <article id="contact" class="fade-in">
             <h2 class="section-title">Contact</h2>
-            <h3 class="contact-title">Kom met ons in gesprek!</h3>
-            <h3 class="contact-subtitle">Stuur ons een mail</h3>
+            <h3 class="contact-title">Wij houden van korte lijntjes, jij toch ook?</h3>
+            <h3 class="contact-subtitle">Kom met ons in gesprek om de mogelijkheden van b-RAIN te bespreken</h3>
             <section class="section-row">
                 <div class="col">
                     <form>
@@ -215,7 +215,7 @@
                         <input type="email" placeholder="email...">
                         <label for="message">Bericht</label>
                         <textarea placeholder="bericht..."></textarea>
-                        <input type="submit" class="btn btn-colored" value="Verzenden">
+                        <button type="submit" class="btn btn-green"><i class="fa-regular fa-paper-plane"></i> Verzenden</button>
                     </form>
                 </div>
                 <div class="col img-flex">
@@ -224,13 +224,36 @@
             </section>
         </article>
 
-        <article id="spatwater">
-            <h2 class="section-title">SPATwater</h2>
+        <article class="fade-in">
+            <h2 class="section-title">Foto's</h2>
+            <ul class="carousel">
+                <li class="image-item"><img src="./assets/voorbeeld1.png" alt="foto"></li>
+                <li class="image-item"><img src="./assets/voorbeeld2.png" alt="foto"></li>
+                <li class="image-item"><img src="./assets/voorbeeld3.png" alt="foto"></li>
+                <li class="image-item"><img src="./assets/voorbeeld4.png" alt="foto"></li>
+            </ul>
+        </article>
+
+        <article id="spatwater" class="fade-in">
+            <h2 class="section-title">Over Ons</h2>
+            <p>
+                b-RAIN is ontwikkeld door SPATwater. SPATwater bestaat uit een nieuwe generatie enthousiaste hydrologen die met een technische achtergrond nét wat anders kijken naar ruimtelijke opgaven. De uitdagingen zijn enorm, maar de kansen die het biedt nog groter. 
+                Met expertise op het gebied van waterkwaliteit, de Kaderrichtlijn Water en klimaatadaptatie helpt SPATwater overheden en bedrijven om toekomstbestendig en waterrobuust te worden.
+            </p>
             <p><b>info@spatwater.nl</b></p>
-            <p>Link naar de website van SPATwater</p>
-            <a href="https://www.spatwater.nl" class="btn btn-colored"><i class="fa-solid fa-water"></i> SPATwater</a>
+            <a href="https://www.spatwater.nl" class="btn btn-green"><i class="fa-solid fa-water"></i> SPATwater</a>
+        </article>
+
+        <article id="doelen">
+            <h2 class="contact-title">Doelen</h2>
+            <ul class="doel-list">
+                <li>overstorten KRW lichamen</li>
+                <li>Wateroverlast</li>
+                <li>Droogte</li>
+            </ul>
         </article>
     </main>
+
     <section class="moving-cloud rotate-cloud"></section>
     <footer>
         <p>© 2023 b-RAIN. All rights reserved.</p>
