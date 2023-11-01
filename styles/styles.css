@@ -552,14 +552,39 @@
   }
 
   footer {
-    height: 5em;
     background-color: var(--white);
     padding: 1em 15em;
   }
 
-  footer p {
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-bottom p, .footer-bottom a {
     color: var(--grey);
     font-size: 1em;
+  }
+
+  .footer-bottom a:hover {
+    color: var(--darkblue);
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-list ul {
+    list-style: none;
+    padding: 1em;
+  }
+
+  .footer-list ul li:nth-child(1) {
+    font-size: 1.2em;
   }
 
   ::-webkit-scrollbar {
@@ -579,6 +604,31 @@
   }
 
   @media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      position: relative;
+    }
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    .nav-toggle {
+      display: block;
+      cursor: pointer;
+    }
+    .nav-toggle-show {
+      display: flex;
+    }
+    nav a {
+      align-self: self-start;
+    }
+    .nav-heading {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     article{
       padding: 1em;
     }
@@ -632,34 +682,15 @@
     }
   }
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1280px) {
     nav {
-      flex-direction: column;
-      position: relative;
+      padding: 1em 2em;
     }
-    .nav-items {
-      display: none;
-      flex-direction: column;
-      width: 100%;
+    article{
+      padding: 1em 2em;
     }
-    .nav-toggle {
-      display: block;
-      cursor: pointer;
-    }
-    .nav-toggle-show {
-      display: flex;
-    }
-    nav a {
-      align-self: self-start;
-    }
-    .nav-heading {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    article {
-      padding: 1em 5em;
+    footer {
+      padding: 1em 2em;
     }
   }
 
