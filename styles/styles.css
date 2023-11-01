@@ -68,10 +68,10 @@
   .header-bg {
     background-image: url('../assets/header-img.png');
     background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-repeat: repeat-x;
+    background-size: contain;
     margin-bottom: 1em;
+    animation: scrollCloud 25s linear infinite;
   }
 
   .header-height {
@@ -688,6 +688,9 @@
     }
     footer {
       padding: 1em 2em;
+    }
+    .header-bg {
+      background-size: cover;
     }
   }
 
