@@ -95,10 +95,15 @@ window.addEventListener("scroll", function() {
 
 
 var val = document.getElementById("problem-slider").value;
-document.getElementById("slider-img").src = "./assets/slider-img" +  val + ".svg";
+document.getElementById("slider-img").src = "./assets/slider-deal.svg";
 
-function showVal(newVal){
-  document.getElementById("slider-img").src = "./assets/slider-img" + newVal+ ".svg";
+function showVal(newVal) {
+  let slider = ["slider-deal.svg", "slider-weather.svg", "slider-save.png", "slider-fill.png", "slider-saveup.svg", "slider-app.svg"];
+  let text = ["Installatie van de regenton", "Real-time weersvoorspellingen", "Systeem vult de regenton automatisch bij droogte", 
+  "Systeem leegt de regenton automatisch bij regen", "Bespaar kosten", "Krijg inzicht op je wateropslag met de app"];
+
+  document.getElementById("slider-img").src = "./assets/" + slider[newVal];
+  document.getElementById("slider-label").innerHTML = text[newVal];
 }
 
 var sections = document.querySelectorAll(".fade-in");
@@ -145,6 +150,36 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 3000);
+
+
+const changeColorButton = document.getElementById('change-color-button');
+let rainMode = false;
+
+changeColorButton.addEventListener('click', function () {
+
+  if (rainMode === false){
+    document.documentElement.style.setProperty('--cloud', '#5a8396');
+    document.documentElement.style.setProperty('--grey', '#3b5866');
+
+    const movingCloudElements = document.getElementsByClassName("moving-cloud");
+    for (let i = 0; i < movingCloudElements.length; i++) {
+      movingCloudElements[i].style.backgroundImage = 'url("../assets/cloud-dark.png")';
+    }
+
+    rainMode = true;
+  }else{
+    document.documentElement.style.setProperty('--cloud', '#ffffff');
+    document.documentElement.style.setProperty('--grey', '#919ea1');
+
+    const movingCloudElements = document.getElementsByClassName("moving-cloud");
+    for (let i = 0; i < movingCloudElements.length; i++) {
+      movingCloudElements[i].style.backgroundImage = 'url("../assets/cloud.png")';
+    }
+
+    rainMode = false;
+  }
+});
+
 
 
 
