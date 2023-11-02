@@ -24,7 +24,7 @@ Als extra heb ik een lijst van foto's en een ervaringen section gemaakt om de we
 <!-- Voeg een mooie poster visual toe 📸 -->
 ![b-RAIN ontwerp](https://github.com/Mossati/the-client-website/assets/47789542/70c39395-85a3-40b1-84d6-9fc0fc4a2f0b)
 <!-- Voeg een link toe naar Github Pages 🌐-->
-Je kan de website [hier](mossati.github.io/the-client-website/) bekijken.
+Je kan de website [hier](https://mossati.github.io/the-client-website/) bekijken.
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
