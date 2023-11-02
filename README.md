@@ -2,7 +2,7 @@
 
 # b-RAIN website
 Wij hebben de taak gekregen om een landingspagina te maken voor b-RAIN
-waar alles wordt verteld over hoe b-RAIn in zijn werking gaat en over de app.
+waar alles wordt verteld over hoe b-RAIN in zijn werking gaat en over de app.
 
 ## Inhoudsopgave
 
@@ -13,7 +13,7 @@ waar alles wordt verteld over hoe b-RAIn in zijn werking gaat en over de app.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-Voor deze opdracht had ik de volgende User Story gekregen:
+Voor deze opdracht had ik de volgende User Story gekregen:\n
 "Create landing page where potential clients see the advantages of using b-RAIN"
 
 Ik heb een landingspagina gemaakt waarop je alle informatie kan lezen en zien over b-RAIN.
@@ -54,7 +54,7 @@ Ook heb ik Font Awesome gebruikt voor speciale icoontjes.
 
 Voor Javascript heb ik meerdere functies gebouwd zoals:
 
-### Tekst functie
+### Tekst
 Met deze functie kan ik kleine stukjes tekst laten zien en wanneer je op een button klikt komt de hele tekst tevoorschijn.
 
 ### Navbar toggle
