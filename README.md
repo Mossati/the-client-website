@@ -13,7 +13,7 @@ waar alles wordt verteld over hoe b-RAIN in zijn werking gaat en over de app.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-Voor deze opdracht had ik de volgende User Story gekregen:\n
+Voor deze opdracht had ik de volgende User Story gekregen:
 "Create landing page where potential clients see the advantages of using b-RAIN"
 
 Ik heb een landingspagina gemaakt waarop je alle informatie kan lezen en zien over b-RAIN.
