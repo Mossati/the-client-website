@@ -152,7 +152,7 @@ function nextSlide() {
 setInterval(nextSlide, 3000);
 
 
-const changeColorButton = document.getElementById('change-color-button');
+const changeColorButton = document.getElementById('dark-mode');
 let rainMode = false;
 
 changeColorButton.addEventListener('click', function () {
